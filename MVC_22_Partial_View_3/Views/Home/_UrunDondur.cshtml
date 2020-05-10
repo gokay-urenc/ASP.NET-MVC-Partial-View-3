@@ -1,0 +1,17 @@
+﻿@model List<MVC_22_Partial_View_3.Models.Product>
+
+<table class="table table-striped">
+    <tr>
+        <td>ID</td>
+        <td>Adı</td>
+        <td>Fiyatı</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductID</td>
+            <td>@item.ProductName</td>
+            <td>@item.UnitPrice</td>
+        </tr>
+    }
+</table>
